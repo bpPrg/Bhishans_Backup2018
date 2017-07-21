@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pets &#8212; Research 1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Research 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for pets</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="c1">#</span>
+<span class="c1"># Copyright (c) 2015, Dan Sheffner Digital Imaging Software Soltuions, INC</span>
+<span class="c1"># All rights reserved.</span>
+<span class="c1">#</span>
+<span class="c1"># Permission is hereby granted, free of charge, to any person obtaining a</span>
+<span class="c1"># copy of this software and associated documentation files (the</span>
+<span class="c1"># &quot;Software&quot;), to deal in the Software without restriction, including</span>
+<span class="c1"># without limitation the rights to use, copy, modify, merge, publish, dis-</span>
+<span class="c1"># tribute, sublicense, and/or sell copies of the Software, and to permit</span>
+<span class="c1"># persons to whom the Software is furnished to do so, subject to the fol-</span>
+<span class="c1"># lowing conditions:</span>
+<span class="c1">#</span>
+<span class="c1"># The above copyright notice and this permission notice shall be included</span>
+<span class="c1"># in all copies or substantial portions of the Software.</span>
+<span class="c1">#</span>
+<span class="c1"># THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS</span>
+<span class="c1"># OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABIL-</span>
+<span class="c1"># ITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT</span>
+<span class="c1"># SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,</span>
+<span class="c1"># WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<span class="c1"># OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS</span>
+<span class="c1"># IN THE SOFTWARE.</span>
+
+<span class="c1"># I give credit to https://ace.c9.io/#nav=about for this web based text editor</span>
+
+<span class="c1"># my source code can be found here for this class</span>
+<span class="c1"># https://raw.githubusercontent.com/thesheff17/youtube/master/python7/pets.py</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This program will demo a class in python</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
+
+<div class="viewcode-block" id="Pets"><a class="viewcode-back" href="../pets.html#pets.Pets">[docs]</a><span class="k">class</span> <span class="nc">Pets</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This class will represent a class for pets</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;0.1&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">owner</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        creates the variables associated with the class</span>
+
+<span class="sd">        :type name: string</span>
+<span class="sd">        :param name: the name of the pet</span>
+<span class="sd">        </span>
+<span class="sd">        :type owner: string</span>
+<span class="sd">        :param owner: the owner of the pet</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">owner</span> <span class="o">=</span> <span class="n">owner</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Pets.add_pet"><a class="viewcode-back" href="../pets.html#pets.Pets.add_pet">[docs]</a>    <span class="k">def</span> <span class="nf">add_pet</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        adds a pet to the pet list</span>
+
+<span class="sd">        :type name: string</span>
+<span class="sd">        :param name: pet name to add to the list</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Pets.show_pets"><a class="viewcode-back" href="../pets.html#pets.Pets.show_pets">[docs]</a>    <span class="k">def</span> <span class="nf">show_pets</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        prints out all the pets in the list</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;The owner of these pets are: &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">owner</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">each</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="n">each</span><span class="p">)</span></div>
+
+    <span class="nd">@classmethod</span>            <span class="c1"># alternative constructor</span>
+<div class="viewcode-block" id="Pets.random_pets"><a class="viewcode-back" href="../pets.html#pets.Pets.random_pets">[docs]</a>    <span class="k">def</span> <span class="nf">random_pets</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">owner</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        special method was created after to address owners that did not </span>
+<span class="sd">        want to pick a pet name.</span>
+
+<span class="sd">        :type cls: Pets</span>
+<span class="sd">        :param cls: an instance of the class passed to __init__</span>
+
+<span class="sd">        :type owner: string</span>
+<span class="sd">        :param owner: the owner of this pet</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">pets_random</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Cocoa&#39;</span><span class="p">,</span> <span class="s1">&#39;Jasper&#39;</span><span class="p">,</span> <span class="s1">&#39;Elmo&#39;</span><span class="p">,</span> <span class="s1">&#39;Chester&#39;</span><span class="p">,</span> <span class="s1">&#39;Rufus&#39;</span><span class="p">]</span>
+        <span class="n">random_pet_name</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">pets_random</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">random_pet_name</span><span class="p">,</span> <span class="n">owner</span><span class="p">)</span></div>
+
+    <span class="nd">@staticmethod</span>           <span class="c1"># attach a method doesn&#39;t need self</span>
+<div class="viewcode-block" id="Pets.get_average_age"><a class="viewcode-back" href="../pets.html#pets.Pets.get_average_age">[docs]</a>    <span class="k">def</span> <span class="nf">get_average_age</span><span class="p">(</span><span class="n">pet_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        prints out the average age of a pet</span>
+
+<span class="sd">        :type pet_type: string</span>
+<span class="sd">        :param pet_type: 3 most popular pets</span>
+<span class="sd">         &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="n">pet_type</span> <span class="ow">is</span> <span class="s1">&#39;dog&#39;</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Dogs average life is: 13 years&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">pet_type</span> <span class="ow">is</span> <span class="s1">&#39;cat&#39;</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Cats average life is: 15 years&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">pet_type</span> <span class="ow">is</span> <span class="s1">&#39;fish&#39;</span><span class="p">:</span>
+           <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Gold Fish average life is: 30 years&#39;</span><span class="p">)</span></div></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="c1"># the first class</span>
+    <span class="n">p1</span> <span class="o">=</span> <span class="n">Pets</span><span class="p">(</span><span class="s1">&#39;jabba&#39;</span><span class="p">,</span> <span class="s1">&#39;Dan Sheffner&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">p1</span><span class="p">))</span>
+    <span class="n">p1</span><span class="o">.</span><span class="n">show_pets</span><span class="p">()</span>
+    <span class="nb">print</span> <span class="p">()</span>
+    <span class="n">p1</span><span class="o">.</span><span class="n">get_average_age</span><span class="p">(</span><span class="s1">&#39;cat&#39;</span><span class="p">)</span>
+
+    <span class="nb">print</span> <span class="p">()</span>
+
+    <span class="c1"># the second class</span>
+    <span class="n">p2</span> <span class="o">=</span> <span class="n">Pets</span><span class="o">.</span><span class="n">random_pets</span><span class="p">(</span><span class="s1">&#39;Chris Sheffner&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">p2</span><span class="p">))</span>
+    <span class="n">p2</span><span class="o">.</span><span class="n">show_pets</span><span class="p">()</span>
+    <span class="nb">print</span> <span class="p">()</span>
+
+   <span class="c1"># owner gets another pet later on and names it roo</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;owner buys another pet later on...&#39;</span><span class="p">)</span>
+    <span class="n">p2</span><span class="o">.</span><span class="n">add_pet</span><span class="p">(</span><span class="s1">&#39;Roo&#39;</span><span class="p">)</span>
+    <span class="n">p2</span><span class="o">.</span><span class="n">show_pets</span><span class="p">()</span>
+    <span class="nb">print</span> <span class="p">()</span>
+
+    <span class="n">p2</span><span class="o">.</span><span class="n">get_average_age</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span><span class="p">)</span>
+    <span class="n">p2</span><span class="o">.</span><span class="n">get_average_age</span><span class="p">(</span><span class="s1">&#39;fish&#39;</span><span class="p">)</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Research 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Bhishan Poudel.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+    </div>
+  </body>
+</html>

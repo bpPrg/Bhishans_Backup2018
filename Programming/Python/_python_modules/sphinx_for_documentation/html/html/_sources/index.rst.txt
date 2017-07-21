@@ -1,0 +1,10 @@
+scripts
+=======
+
+.. toctree::
+   :maxdepth: 4
+
+   galaxy_count_conversion
+   mag_diff_f6_f8
+   natural_sort_each_lines
+   pets

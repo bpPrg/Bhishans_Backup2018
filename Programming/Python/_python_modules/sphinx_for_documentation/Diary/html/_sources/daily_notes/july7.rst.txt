@@ -1,0 +1,9 @@
+July7 : Learned doctest and unittest examples.
+==================================================
+:July7: 
+    Learned doctest and unittest examples.
+
+July8 : Learned testing using nose.
+==================================================
+:July8: 
+    Learned testing using nose.

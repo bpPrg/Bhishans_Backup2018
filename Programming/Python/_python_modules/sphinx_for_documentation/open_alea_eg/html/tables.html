@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>tables &#8212; Research 1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Include other reST files and TOC" href="include_other_rest.html" />
+    <link rel="prev" title="list and bullets" href="list_and_bullets.html" /> 
+  </head>
+  <body role="document">
+      <div class="header" role="banner"><h1 class="heading"><a href="index.html">
+          <span>Research 1 documentation</span></a></h1>
+        <h2 class="heading"><span>tables</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="list_and_bullets.html">list and bullets</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="include_other_rest.html">Include other reST files and TOC</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="tables">
+<h1>tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h1>
+<p>There are several ways to write tables. Use standard reStructuredText tables as explained here. They work fine in HTML output, however, there are some gotchas when using tables for LaTeX output.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">simple table:</th><td class="field-body"><p class="first">Simple tables can be written as follows:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">+---------+---------+-----------+</span>
+<span class="o">|</span> <span class="mi">1</span>       <span class="o">|</span>  <span class="mi">2</span>      <span class="o">|</span>  <span class="mi">3</span>        <span class="o">|</span>
+<span class="o">+---------+---------+-----------+</span>
+</pre></div>
+</div>
+<p>which gives:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="31%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">complex table:</th><td class="field-body"><div class="first highlight-default"><div class="highlight"><pre><span></span><span class="o">+------------+------------+-----------+</span>
+<span class="o">|</span> <span class="n">Header</span> <span class="mi">1</span>   <span class="o">|</span> <span class="n">Header</span> <span class="mi">2</span>   <span class="o">|</span> <span class="n">Header</span> <span class="mi">3</span>  <span class="o">|</span>
+<span class="o">+============+============+===========+</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">1</span> <span class="o">|</span> <span class="n">column</span> <span class="mi">2</span>   <span class="o">|</span> <span class="n">column</span> <span class="mi">3</span>  <span class="o">|</span>
+<span class="o">+------------+------------+-----------+</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">2</span> <span class="o">|</span> <span class="n">Cells</span> <span class="n">may</span> <span class="n">span</span> <span class="n">columns</span><span class="o">.|</span>
+<span class="o">+------------+------------+-----------+</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">3</span> <span class="o">|</span> <span class="n">Cells</span> <span class="n">may</span>  <span class="o">|</span> <span class="o">-</span> <span class="n">Cells</span>   <span class="o">|</span>
+<span class="o">+------------+</span> <span class="n">span</span> <span class="n">rows</span><span class="o">.</span> <span class="o">|</span> <span class="o">-</span> <span class="n">contain</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">4</span> <span class="o">|</span>            <span class="o">|</span> <span class="o">-</span> <span class="n">blocks</span><span class="o">.</span> <span class="o">|</span>
+<span class="o">+------------+------------+-----------+</span>
+</pre></div>
+</div>
+<p>gives:</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">another way:</th><td class="field-body"><div class="first highlight-default"><div class="highlight"><pre><span></span><span class="o">=====</span>  <span class="o">=====</span>  <span class="o">======</span>
+   <span class="n">Inputs</span>     <span class="n">Output</span>
+<span class="o">------------</span>  <span class="o">------</span>
+  <span class="n">A</span>      <span class="n">B</span>    <span class="n">A</span> <span class="ow">or</span> <span class="n">B</span>
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">======</span>
+<span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>
+<span class="kc">True</span>   <span class="kc">False</span>  <span class="kc">True</span>
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">======</span>
+</pre></div>
+</div>
+<p class="last">gives:</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">table and latex documents are not yet compatible in sphinx, and you should therefore precede them with the a special directive (.. htmlonly::)</p>
+</div>
+<p>The previous examples work fine in HTML output, however there are some gotchas when using tables in LaTeX: the column width is hard to determine correctly automatically. For this reason, the following directive exists:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">tabularcolumns</span><span class="p">::</span> <span class="n">column</span> <span class="n">spec</span>
+</pre></div>
+</div>
+<p>This directive gives a â€œcolumn specâ€ for the next table occurring in the source file. It can have values like:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">|</span><span class="n">l</span><span class="o">|</span><span class="n">l</span><span class="o">|</span><span class="n">l</span><span class="o">|</span>
+</pre></div>
+</div>
+<p>which means three left-adjusted (LaTeX syntax). By default, Sphinx uses a table layout with L for every column. This code:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">tabularcolumns</span><span class="p">::</span> <span class="o">|</span><span class="n">l</span><span class="o">|</span><span class="n">c</span><span class="o">|</span><span class="n">p</span><span class="p">{</span><span class="mi">5</span><span class="n">cm</span><span class="p">}</span><span class="o">|</span>
+
+<span class="o">+--------------+---+-----------+</span>
+<span class="o">|</span>  <span class="n">simple</span> <span class="n">text</span> <span class="o">|</span> <span class="mi">2</span> <span class="o">|</span> <span class="mi">3</span>         <span class="o">|</span>
+<span class="o">+--------------+---+-----------+</span>
+</pre></div>
+</div>
+<p>gives</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="list_and_bullets.html">list and bullets</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="include_other_rest.html">Include other reST files and TOC</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Bhishan Poudel.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.6.
+    </div>
+  </body>
+</html>

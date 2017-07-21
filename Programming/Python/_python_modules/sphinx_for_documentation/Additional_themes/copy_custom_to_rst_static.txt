@@ -1,0 +1,1 @@
+awk -v n=1 -v s=".. contents:: Table of Contents\n   :depth: 3" 'NR == n {print s} {print}' rst/index.rst > tmp

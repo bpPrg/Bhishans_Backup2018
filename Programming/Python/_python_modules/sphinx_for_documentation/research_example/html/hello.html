@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pets module &#8212; Research 1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Tutorial" href="tutorial.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tutorial.html" title="Tutorial"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Research 1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pets">
+<span id="pets-module"></span><h1>pets module<a class="headerlink" href="#module-pets" title="Permalink to this headline">¶</a></h1>
+<p>This program will demo a class in python</p>
+<dl class="class">
+<dt id="pets.Pets">
+<em class="property">class </em><code class="descclassname">pets.</code><code class="descname">Pets</code><span class="sig-paren">(</span><em>name</em>, <em>owner</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pets.html#Pets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pets.Pets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>This class will represent a class for pets</p>
+<dl class="method">
+<dt id="pets.Pets.add_pet">
+<code class="descname">add_pet</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pets.html#Pets.add_pet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pets.Pets.add_pet" title="Permalink to this definition">¶</a></dt>
+<dd><p>adds a pet to the pet list</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>string</em>) &#8211; pet name to add to the list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pets.Pets.get_average_age">
+<em class="property">static </em><code class="descname">get_average_age</code><span class="sig-paren">(</span><em>pet_type</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pets.html#Pets.get_average_age"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pets.Pets.get_average_age" title="Permalink to this definition">¶</a></dt>
+<dd><p>prints out the average age of a pet</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pet_type</strong> (<em>string</em>) &#8211; 3 most popular pets</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="pets.Pets.random_pets">
+<em class="property">classmethod </em><code class="descname">random_pets</code><span class="sig-paren">(</span><em>owner</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pets.html#Pets.random_pets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pets.Pets.random_pets" title="Permalink to this definition">¶</a></dt>
+<dd><p>special method was created after to address owners that did not 
+want to pick a pet name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cls</strong> (<a class="reference internal" href="#pets.Pets" title="pets.Pets"><em>Pets</em></a>) &#8211; an instance of the class passed to __init__</li>
+<li><strong>owner</strong> (<em>string</em>) &#8211; the owner of this pet</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pets.Pets.show_pets">
+<code class="descname">show_pets</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pets.html#Pets.show_pets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pets.Pets.show_pets" title="Permalink to this definition">¶</a></dt>
+<dd><p>prints out all the pets in the list</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pets.Pets.version">
+<code class="descname">version</code><em class="property"> = '0.1'</em><a class="headerlink" href="#pets.Pets.version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tutorial.html"
+                        title="previous chapter">Tutorial</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/hello.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tutorial.html" title="Tutorial"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Research 1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Bhishan Poudel.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+    </div>
+  </body>
+</html>

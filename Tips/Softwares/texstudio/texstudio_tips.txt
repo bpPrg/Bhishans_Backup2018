@@ -1,0 +1,23 @@
+# Author    : Bhishan Poudel
+# Date      : May 04, 2017
+
+Texstudio Tips
+===============
+
+1. line duplicate
+TexStudio > Preference > Shortcuts > Line operations > Click below 
+Current Shortcut > Press cmd shf d
+
+duplicate line: cmd shf d
+move line up: cmd shf up
+move line dn: cmd shf dn
+
+
+2. Show Line Numbers
+TexStudio > Preference > Show advanced option (at left bottom) 
+> Adv Editor > Check Show line number True.
+
+3. Auto save all files
+
+TexStudio > Preference > Show advanced option (at left bottom) 
+> Adv Editor > Choose auto save.

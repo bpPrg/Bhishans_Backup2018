@@ -1,0 +1,7 @@
+mag\_diff\_f6\_f8 module
+========================
+
+.. automodule:: mag_diff_f6_f8
+    :members:
+    :undoc-members:
+    :show-inheritance:

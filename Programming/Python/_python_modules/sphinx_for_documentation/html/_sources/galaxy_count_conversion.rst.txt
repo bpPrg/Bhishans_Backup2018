@@ -1,0 +1,7 @@
+galaxy\_count\_conversion module
+================================
+
+.. automodule:: galaxy_count_conversion
+    :members:
+    :undoc-members:
+    :show-inheritance:

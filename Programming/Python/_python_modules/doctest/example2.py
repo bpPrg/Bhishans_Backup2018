@@ -1,4 +1,4 @@
-#!/usr/local/bin/env python3
+#!python
 
 def square(x):
     """Return the square of x.

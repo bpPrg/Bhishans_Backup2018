@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!python
 # -*- coding: utf-8 -*-
 #
 # Author      : Bhishan Poudel; Physics PhD Student, Ohio University
@@ -13,8 +13,13 @@ import os
 
 
 url = 'http://www.futurecrew.com/skaven/song_files/mp3/razorback.mp3'
-if not os.path.isfile(os.path.basename(url)):
-    wget.download(url, out='.')
+def main():
+    
+    if not os.path.isfile(os.path.basename(url)):
+        wget.download(url, out='.')
 
-# version
-print(wget.__version__)
+    # version
+    print(wget.__version__)
+
+if __name__ == '__main__':
+    main()

@@ -8,5 +8,11 @@
 #
 # Imports
 import statistics
-list_ = [1, 2, 3, 3, 3]
-print(statistics.mode(list_))
+
+def main():
+    
+    list_ = [1, 2, 3, 3, 3]
+    print(statistics.mode(list_))
+
+if __name__ == '__main__':
+    main()

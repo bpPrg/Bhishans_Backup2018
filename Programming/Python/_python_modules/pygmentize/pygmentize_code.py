@@ -8,7 +8,12 @@
 # Imports
 import os
 
-pcat = "pygmentize -l python -f terminal256 -O style=native -g "
-cmd = pcat + 'hello.py'
+def main():
 
-os.system(cmd)
+    pcat = "pygmentize -l python -f terminal256 -O style=native -g "
+    cmd = pcat + 'hello.py'
+
+    os.system(cmd)
+
+if __name__ == '__main__':
+    main()

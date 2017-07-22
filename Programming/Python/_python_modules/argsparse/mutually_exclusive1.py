@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!python
 # -*- coding: utf-8 -*-
 """
 **Author:** Bhishan Poudel; Physics PhD Student, Ohio University

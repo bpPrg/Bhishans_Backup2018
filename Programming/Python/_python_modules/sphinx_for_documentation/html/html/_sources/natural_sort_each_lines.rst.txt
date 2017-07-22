@@ -1,7 +1,0 @@
-natural\_sort\_each\_lines module
-=================================
-
-.. automodule:: natural_sort_each_lines
-    :members:
-    :undoc-members:
-    :show-inheritance:

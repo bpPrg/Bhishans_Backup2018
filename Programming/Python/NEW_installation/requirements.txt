@@ -1,10 +1,11 @@
 numpy
 pandas
+tabulate
 pandasql
 scipy
 sympy
 matplotlib
-sklearn
+scikit-learn
 nose
 natsort
 astropy

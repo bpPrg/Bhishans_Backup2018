@@ -1,4 +1,4 @@
-#!usr/local/bin/env python3
+#!python
 
 def func(x):
     return x+1

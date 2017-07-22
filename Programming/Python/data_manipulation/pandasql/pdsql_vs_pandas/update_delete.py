@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!python
 # -*- coding: utf-8 -*-#
 #
 # Author      : Bhishan Poudel; Physics Graduate Student, Ohio University
@@ -21,14 +21,17 @@ def pysql(q):
     print(pdsql.sqldf(q, globals()))
     return None
 
+def main():
+    # UNION
+    q = """
+    DELETE FROM tips
+    WHERE tip > 1;
+    """
 
-# UNION
-q = """
-DELETE FROM tips
-WHERE tip > 1;
-"""
+    mydf = tips.loc[tips['tip'] <= 1]
+    print(mydf)
+    print("\n")
+    pysql(q)
 
-mydf = tips.loc[tips['tip'] <= 1]
-print(mydf)
-print("\n")
-pysql(q)
+if __name__ == '__main__':
+    main()

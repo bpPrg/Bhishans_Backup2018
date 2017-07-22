@@ -2,15 +2,14 @@
 # -*- coding: utf-8 -*-
 #
 # Author      : Bhishan Poudel, Physics PhD Student, Ohio University
-# Date        : Jul 19, 2017 Wed
+# Date        : Jul 22, 2017 Sat
+# Last update :
 #
 # Imports
-import shutil
+import tensorflow as tf
 
 def main():
-    """Main Module."""
-    fmt = 'zip' # 'tar' , 'gztar'
-    shutil.make_archive('myhtml', fmt, 'html')
+    print(tf.__version__)
 
 if __name__ == '__main__':
     main()

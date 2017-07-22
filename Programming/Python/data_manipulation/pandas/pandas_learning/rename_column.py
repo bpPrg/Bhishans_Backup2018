@@ -13,11 +13,16 @@ import copy
 
 def main():
     
-    df = pd.DataFrame({'a': [1, 2], 'b': [10, 20], 'c': [10, 20]})
+    df = pd.DataFrame({'$a': [1, 2], '$b': [10, 20]})
 
-    # axis = 0 for row
-    df1 = df.drop(['a'], axis=1, errors='ignore', inplace=False)
-    df1 = df.drop(df.columns[[0, 1]], axis=1, errors='ignore')
+    df1 = copy.deepcopy(df)
+    df1.columns = ['a', 'b']
+    df1.columns = [col.strip('$') for col in df.columns]
+    # df1.columns = df1.columns.str.replace('$', '')
+    # df1 = df.rename(columns=lambda x: x[1:])
+    # df1 = df.rename(columns=lambda x: x.replace('$', ''))
+    df1 = df.rename(columns=lambda x: x.lstrip('$'))
+    print(df)
     print(df1)
 
 if __name__ == '__main__':

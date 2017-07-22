@@ -1,1 +1,0 @@
-Search.setIndex({docnames:["index","july","june"],envversion:51,filenames:["index.rst","july.rst","june.rst"],objects:{},objnames:{},objtypes:{},terms:{chap1:2,chap3:1,chap:[1,2],sub:1,subchap:0,thi:[0,2]},titles:["Monthly Notes","July 1","June 1"],titleterms:{content:0,juli:[0,1],june:[0,2],monthli:0,note:0,subchap:1,tabl:0,thi:1}})

@@ -1,9 +1,3 @@
-.. image:: ../html/_images/logo.jpg
-   :height: 100px
-   :width: 3000 px
-   :align: center
-
-
 .. sidebar:: Project: a
 
    :Author: Bhishan Poudel

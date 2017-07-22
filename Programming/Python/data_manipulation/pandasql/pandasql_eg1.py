@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!python
 # -*- coding: utf-8 -*-#
 #
 # Author      : Bhishan Poudel; Physics Graduate Student, Ohio University
@@ -7,27 +7,6 @@
 # Note: SQL stands for Structured Query Language
 # SQL Clauses
 # DISTINCT FROM WHERE ORDER BY GROUP BY HAVING BETWEEN
-
-
-# Imports
-import pandasql as pdsql
-import pandas as pd
-import numpy as np
-
-meat = pdsql.load_meat()
-products = pd.read_csv('Products.csv', sep='\s+', lineterminator='\r')
-print(products)
-
-# print(meat)  # [827 rows x 8 columns]
-
-# queries
-q = "select beef,veal from meat;"
-q = "select * from meat where beef>2450 and veal>10;"
-q = "select * from meat where beef>2450 and veal>10 order by lamb_and_mutton;"
-q = "select * from meat limit 3;"
-q = "select * from products where price between 20 and 50;"
-print(pdsql.sqldf(q, locals()))
-
 
 ##################################################################
 """sql comments
@@ -112,3 +91,30 @@ SQL Programming
 
 Comments	How to create comments within your SQL statement
 """
+
+# Imports
+import pandasql as pdsql
+import pandas as pd
+import numpy as np
+
+meat = pdsql.load_meat()
+products = pd.read_csv('Products.csv', sep='\s+', lineterminator='\r')
+
+def main():
+    
+    # Data
+    meat = pdsql.load_meat()
+    products = pd.read_csv('Products.csv', sep='\s+', lineterminator='\r')
+    print(products)
+    
+    # queries
+    #q = "select beef,veal from meat;"
+    #q = "select * from meat where beef>2450 and veal>10;"
+    #q = "select * from meat where beef>2450 and veal>10 order by lamb_and_mutton;"
+    #q = "select * from meat limit 3;"
+    #q = "select * from products where price between 20 and 50;"
+    #print(pdsql.sqldf(q, locals()))
+
+if __name__ == '__main__':
+    main()
+

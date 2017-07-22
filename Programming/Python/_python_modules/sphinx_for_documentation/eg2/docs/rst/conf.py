@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Bhishan's documentation build configuration file, created by
-# sphinx-quickstart on Wed Jul 19 16:18:41 2017.
+# sphinx-quickstart on Fri Jul 21 16:46:14 2017.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.

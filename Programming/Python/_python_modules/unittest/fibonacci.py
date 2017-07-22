@@ -1,4 +1,14 @@
+#!python
+# -*- coding: utf-8 -*-
+#
+# Author      : Bhishan Poudel, Physics PhD Student, Ohio University
+# Date        : Jul 21, 2017 Fri
+# Last update :
+#
+# Imports
 import doctest
+
+
 
 def fib(n):
     """ 

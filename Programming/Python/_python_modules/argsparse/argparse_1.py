@@ -21,7 +21,13 @@ import argparse
 
 
 def mysum(a, b):
-    """ Short script to add two numbers """
+    """ Short script to add two numbers.
+    
+    >>> print ("This is a Doctest block")
+    This is a Doctest block
+    
+    ximg
+    """
     return a + b
 
 if __name__ == '__main__':
